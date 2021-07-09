@@ -9,6 +9,13 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 import "bootstrap"
 
+require("lodash")
+require("packs/test")
+
+var jQuery = require('jquery')
+global.$ = global.jQuery = jQuery;
+window.$ = window.jQuery = jQuery;
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
